@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name AndroidSpinnerwheelBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.module.spinnerwheel.ExampleProxy.h"
+#include "com.module.spinnerwheel.AndroidSpinnerwheelModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.module.spinnerwheel.ExampleProxy, ::com::module::spinnerwheel::androidspinnerwheel::ExampleProxy::bindProxy, ::com::module::spinnerwheel::androidspinnerwheel::ExampleProxy::dispose
+com.module.spinnerwheel.AndroidSpinnerwheelModule, ::com::module::spinnerwheel::AndroidSpinnerwheelModule::bindProxy, ::com::module::spinnerwheel::AndroidSpinnerwheelModule::dispose
+%%

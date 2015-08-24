@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+description: android_spinnerwheel
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2015 by Your Company
+
+# these should not be edited
+name: android_spinnerwheel
+moduleid: com.module.spinnerwheel
+guid: 89145df1-834b-45b7-85ef-f7fb249d1941
+platform: mobileweb
+minsdk: 4.1.0.GA
